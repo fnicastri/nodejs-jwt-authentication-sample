@@ -1,0 +1,32 @@
+{
+  "exams": [
+    {
+      "id_exam": 1,
+      "subject": "Analisi 1",
+      "score": "28",
+      "exam_date": "2017-05-13T09:02:13.613Z",
+      "credits": 4
+    },
+    {
+      "id_exam": 3,
+      "subject": "Calcolo 1",
+      "score": "27",
+      "exam_date": "2017-05-08T09:02:13.613Z",
+      "credits": 4
+    },
+    {
+      "id_exam": 4,
+      "subject": "Geometria 1",
+      "score": "24",
+      "exam_date": "2017-05-08T09:02:13.613Z",
+      "credits": 4
+    },
+    {
+      "id_exam": 13,
+      "subject": "Programmazione ad oggetti",
+      "score": "31",
+      "exam_date": "2017-06-04T09:02:13.613Z",
+      "credits": 4
+    }
+  ]
+}
