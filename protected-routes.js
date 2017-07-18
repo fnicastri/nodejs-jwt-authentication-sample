@@ -1,10 +1,10 @@
-var express = require('express'),
-    jwt     = require('express-jwt'),
-    config  = require('./config'),
-    quoter  = require('./quoter');
-    exams   = require('./exams')
+var express = require("express"),
+  jwt = require("express-jwt"),
+  config = require("./config"),
+  quoter = require("./quoter");
+exams = require("./exams");
 
-var app = module.exports = express.Router();
+var app = (module.exports = express.Router());
 
 // Validate access_token
 var jwtCheck = jwt({
@@ -15,22 +15,23 @@ var jwtCheck = jwt({
 
 // Check for scope
 function requireScope(scope) {
-  return function (req, res, next) {
+  return function(req, res, next) {
     var has_scopes = req.user.scope === scope;
-    if (!has_scopes) { 
-        res.sendStatus(401); 
-        return;
+    if (!has_scopes) {
+      res.sendStatus(401);
+      return;
     }
     next();
   };
 }
 
-app.use('/api/protected', jwtCheck, requireScope('full_access'));
+app.use("/api/protected", jwtCheck, requireScope("full_access"));
 
-app.get('/api/protected/random-quote', function(req, res) {
+app.get("/api/protected/random-quote", function(req, res) {
   res.status(200).send(quoter.getRandomOne());
 });
 
-app.get('/api/protected/exams', function(req, res) {
-  res.status(200).send(exams.getExams());
-})
+app.post("/api/protected/exams", function(req, res) {
+  console.log(req);
+  res.status(200).send(exams.getExams(req.user.sub));
+});

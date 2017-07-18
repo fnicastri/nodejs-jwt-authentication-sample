@@ -1,5 +1,6 @@
-var quotes = require('./exams.json');
+var exams = require('./exams.json');
 
-exports.getExams = function() {
-  return quotes;
+exports.getExams = function(id) {
+  console.log(id)
+  return exams[id]?exams[id].exams:{};
 }

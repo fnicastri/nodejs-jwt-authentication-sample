@@ -1,32 +1,68 @@
-{
-  "exams": [
+[
     {
-      "id_exam": 1,
-      "subject": "Analisi 1",
-      "score": "28",
-      "exam_date": "2017-05-13T09:02:13.613Z",
-      "credits": 4
+        "user_id": 1,
+        "exams": [
+            {
+                "id_exam": 1,
+                "subject": "Analisi 1",
+                "score": "28",
+                "exam_date": "2017-05-13T09:02:13.613Z",
+                "credits": 4
+            },
+            {
+                "id_exam": 3,
+                "subject": "Calcolo 1",
+                "score": "27",
+                "exam_date": "2017-05-08T09:02:13.613Z",
+                "credits": 4
+            },
+            {
+                "id_exam": 4,
+                "subject": "Geometria 1",
+                "score": "24",
+                "exam_date": "2017-05-08T09:02:13.613Z",
+                "credits": 4
+            },
+            {
+                "id_exam": 13,
+                "subject": "Programmazione ad oggetti",
+                "score": "31",
+                "exam_date": "2017-06-04T09:02:13.613Z",
+                "credits": 4
+            }
+        ]
     },
     {
-      "id_exam": 3,
-      "subject": "Calcolo 1",
-      "score": "27",
-      "exam_date": "2017-05-08T09:02:13.613Z",
-      "credits": 4
-    },
-    {
-      "id_exam": 4,
-      "subject": "Geometria 1",
-      "score": "24",
-      "exam_date": "2017-05-08T09:02:13.613Z",
-      "credits": 4
-    },
-    {
-      "id_exam": 13,
-      "subject": "Programmazione ad oggetti",
-      "score": "31",
-      "exam_date": "2017-06-04T09:02:13.613Z",
-      "credits": 4
+        "user_id": 2,
+        "exams": [
+            {
+                "id_exam": 2,
+                "subject": "LINGUA E LETTERATURA LATINA I",
+                "score": "28",
+                "exam_date": "2017-05-13T09:02:13.613Z",
+                "credits": 6
+            },
+            {
+                "id_exam": 5,
+                "subject": "ISTITUZIONI DI STORIA DELLA LINGUA ITALIANA",
+                "score": "27",
+                "exam_date": "2017-05-08T09:02:13.613Z",
+                "credits": 12
+            },
+            {
+                "id_exam": 8,
+                "subject": "ISTITUZIONI DI LETTERATURA ITALIANA I",
+                "score": "24",
+                "exam_date": "2017-05-08T09:02:13.613Z",
+                "credits": 6
+            },
+            {
+                "id_exam": 12,
+                "subject": "ISTITUZIONI DI LETTERATURA ITALIANA II",
+                "score": "31",
+                "exam_date": "2017-06-04T09:02:13.613Z",
+                "credits": 6
+            }
+        ]
     }
-  ]
-}
+]
